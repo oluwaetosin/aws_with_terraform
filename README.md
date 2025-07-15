@@ -1,6 +1,6 @@
 # 📁 Terraform Projects Overview
 
-A curated list of Terraform infrastructure projects with direct links to each detailed README.
+A curated list of Terraform infrastructure projects.
 
 ---
 
