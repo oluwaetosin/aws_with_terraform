@@ -171,7 +171,7 @@ AZs:        us-east-1a, us-east-1b
 
 **Oluwatosin Omotayo**  
 Cloud & Software Engineer | DevOps Enthusiast  
-[LinkedIn](https://www.linkedin.com/in/your-profile) • [Portfolio](https://yourportfolio.dev)
+[LinkedIn](https://www.linkedin.com/in/omotayo-tosin-software-developer/) • [Portfolio]
 
 ---
 
