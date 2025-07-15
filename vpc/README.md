@@ -40,47 +40,7 @@ Great for:
 
 ## 🗂️ Architecture Overview
 
-```
-AWS Region: us-east-1
-VPC CIDR:   10.0.0.0/16
-AZs:        us-east-1a, us-east-1b
-```
-
-```
-                                   +------------------+
-                                   |   Internet       |
-                                   +--------+---------+
-                                            |
-                                    +-------v--------+
-                                    |   IGW (MyIGW)   |
-                                    +-------+--------+
-                                            |
-                                +-----------+-----------+
-                                |     VPC: MyVPC        |
-                                |      10.0.0.0/16      |
-                                +-----------+-----------+
-        Public Subnet 1A (10.0.1.0/24)     Public Subnet 1B (10.0.2.0/24)
-        AZ: us-east-1a                     AZ: us-east-1b
-             |                                  |
-        [EC2 Public]                        (optional)
-             |
-        +----v----+                         +------------------+
-        | Public  | Route: 0.0.0.0/0 ------> IGW
-        | Route   |
-        +---------+
-
-        Private Subnet 1A (10.0.3.0/24)     Private Subnet 1B (10.0.4.0/24)
-        AZ: us-east-1a                     AZ: us-east-1b
-             |
-        [EC2 Private]
-             |
-        +----v----+                         +------------------+
-        | Private | Route: 0.0.0.0/0 ------> NAT Gateway (via EIP)
-        | Route   |
-        +---------+
-```
-
----
+![alt text](https://github.com/oluwaetosin/aws_with_terraform/blob/master/vpc/architecture.png?raw=true)
 
 ## 🚀 Getting Started
 
